@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Suhail – Cloud Database Engineer</title>
+    <meta name="description" content="Mohammad Suhail – Cloud & Database Engineer. PostgreSQL DBA, AWS RDS/Aurora, performance tuning, replication, automation.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ==========================================
+         NAVIGATION BAR
+         Sticky header that stays at top when scrolling
+         ========================================== -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-brand">Mohammad Suhail</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#notes">Notes</a>
+                <a href="#certs">Certifications</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <!-- Mobile menu button (hidden by default, shown on mobile) -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </div>
+    </nav>
+
+    <!-- ==========================================
+         HERO SECTION
+         Main introduction area with photo and animated text
+         ========================================== -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <!-- Left Side: Profile Photo with Floating Keywords -->
+            <div class="profile-section">
+                <!-- Circular Profile Photo Container -->
+                <div class="profile-circle">
+                    <!-- REPLACE THIS IMAGE PATH WITH YOUR OWN PHOTO -->
+                    <img src="assets/profile.jpg" alt="Mohammad Suhail" id="profileImg">
+                </div>
+                
+                <!-- Floating Background Keywords (Transparent) -->
+                <div class="floating-keywords" id="floatingKeywords">
+                    <div class="keyword" data-speed="20">PostgreSQL</div>
+                    <div class="keyword" data-speed="-15">AWS</div>
+                    <div class="keyword" data-speed="25">RDS</div>
+                    <div class="keyword" data-speed="-20">Replication</div>
+                    <div class="keyword" data-speed="15">Performance</div>
+                </div>
+            </div>
+
+            <!-- Right Side: Hero Text Content -->
+            <div class="hero-text">
+                <h1>Hello, this is</h1>
+                <div class="hero-name">Mohammad Suhail</div>
+                <div class="hero-title">
+                    <span class="gradient-text">CLOUD</span>
+                    <span class="gradient-text">DATABASE</span>
+                    <span class="gradient-text">ENGINEER</span>
+                </div>
+                <p class="hero-subtitle">
+                    PostgreSQL DBA · AWS RDS & Aurora · Performance Tuning & Replication
+                </p>
+                <a href="#projects" class="cta-button">VIEW MY EXPERIENCE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         ABOUT ME SECTION
+         Personal information, skills, and contact buttons
+         EDIT: Change text, badges, and links here
+         ========================================== -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div>
+                <!-- EDIT: Change your description here -->
+                <p class="about-text">
+                    PostgreSQL DBA with 3.5+ years of experience managing production environments. 
+                    Specialized in replication, PITR, WAL management, performance tuning, and automation 
+                    using Python & Bash.
+                </p>
+                
+                <!-- EDIT: Change your location, role, and specialization badges -->
+                <div class="badges">
+                    <span class="badge">📍 Mumbai</span>
+                    <span class="badge">💼 PostgreSQL DBA</span>
+                    <span class="badge">☁️ AWS – RDS & Aurora</span>
+                </div>
+
+                <!-- EDIT: Update your email, LinkedIn, and resume links -->
+                <div class="action-buttons">
+                    <a href="mailto:mohammadsuhail3257@gmail.com" class="btn btn-primary">
+                        <i data-lucide="mail"></i>
+                        Email Me
+                    </a>
+                    <a href="https://linkedin.com/in/suhail3257" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <i data-lucide="linkedin"></i>
+                        LinkedIn
+                    </a>
+                    <a href="assets/resume.pdf" class="btn btn-secondary" download>
+                        <i data-lucide="download"></i>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+
+            <!-- EDIT: Update your key skills list -->
+            <div class="skills-card">
+                <h3>Key Skills</h3>
+                <ul>
+                    <li>Performance tuning & query optimization</li>
+                    <li>Streaming & logical replication</li>
+                    <li>Backup & recovery (PITR, WAL)</li>
+                    <li>Automation & monitoring</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         PROJECTS SECTION
+         Showcase your work and achievements
+         EDIT: Update projects in script.js
+         ========================================== -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Selected Work</h2>
+        <div class="projects-grid" id="projectsGrid">
+            <!-- Projects will be loaded from script.js -->
+        </div>
+    </section>
+
+    <!-- ==========================================
+         NOTES SECTION (TREE STRUCTURE)
+         Knowledge base with collapsible folders
+         EDIT: Update notes in notes.json file
+         ========================================== -->
+    <section id="notes" class="section">
+        <h2 class="section-title">My Notes & Knowledge Base</h2>
+        <p class="section-subtitle">Click on folders to expand and explore my learning journey</p>
+        <div class="notes-container">
+            <div id="notesTree" class="tree-root">
+                <!-- Tree will be loaded from notes.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CERTIFICATIONS SECTION
+         Display your achievements and credentials
+         EDIT: Update certifications in script.js
+         ========================================== -->
+    <section id="certs" class="section">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certs-grid" id="certsGrid">
+            <!-- Certifications will be loaded from script.js -->
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT SECTION (FOOTER)
+         Contact information and social links
+         EDIT: Update contact details here
+         ========================================== -->
+    <section id="contact" class="contact-section">
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <!-- EDIT: Update your email -->
+                <div class="contact-item">
+                    <i data-lucide="mail"></i>
+                    <span>mohammadsuhail3257@gmail.com</span>
+                </div>
+                <!-- EDIT: Update your phone number -->
+                <div class="contact-item">
+                    <i data-lucide="phone"></i>
+                    <span>+91 7038488253</span>
+                </div>
+                <!-- EDIT: Update your social links -->
+                <div class="contact-links">
+                    <a href="https://msuhail.hashnode.dev" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="globe"></i>
+                        Portfolio / Blog
+                    </a>
+                    <a href="https://github.com/mdsuhail-3257" target="_blank" rel="noopener noreferrer">
+                        <i data-lucide="github"></i>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3 style="color: #60a5fa; margin-bottom: 1rem;">About This Site</h3>
+                <p style="color: #94a3b8; line-height: 1.8;">
+                    Built with modern web technologies. Showcasing my journey as a Cloud Database Engineer 
+                    with focus on PostgreSQL, AWS, and database optimization.
+                </p>
+            </div>
+        </div>
+        <div class="copyright">
+            © <span id="currentYear"></span> Mohammad Suhail. All rights reserved.
+        </div>
+    </section>
+
+    <!-- Load JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
