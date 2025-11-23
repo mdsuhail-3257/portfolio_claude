@@ -132,7 +132,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('assets/profile.jpg');
+  background-image: url('assets/background11.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
